@@ -1,0 +1,270 @@
+body{
+    position:relative;
+    background-color: rgb(239,239,239);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
+p,h3,li{
+ color:white;
+}
+
+.header{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin:auto;  
+    background-color: rgb(239,239,239);
+}
+
+
+.resaltado{
+    color:rgb(36, 36, 252);
+}
+
+h1.titulo{
+    border-bottom: 3px solid rgb(36, 36, 252); /* Añade un borde sólido negro de 1px en la parte inferior */
+    padding-bottom: 5px; /* Opcional: Añade un poco de espacio entre el texto y la línea */
+}
+
+h2.left{
+    text-align: left; 
+}
+
+
+.lecturas_fondo{
+    background-color: rgba(241, 135, 170, 0.866);
+    position: relative;
+    width: auto;
+    height: 1100px;
+
+}
+.peliculas_fondo{
+    background-color: #84b6f4;
+    position: relative;
+    width: auto;
+    height: 1000px;
+}
+.lugares_visitados{
+    background-color: #84f484;
+    position: relative;
+    width: auto;
+    height: 900px;
+}
+.busqueda_animales{
+    background-color: #f5df64;
+    position: relative;
+    width: auto;
+    height: 900px;
+}
+
+article{
+
+    background-color: #f74780;
+    width: 300px;
+    height: 400px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.art_left{
+    position:absolute;
+    top: 50px;
+    left: 380px;
+       
+}
+.art_rigth{
+    position:absolute;
+    top: 50px;
+    right: 10px;
+    
+}
+.art_center{
+    position:absolute;
+    top: 670px;
+    right: 120px;
+    width: 800px;
+    height: 300px;
+    
+}
+
+.art_left_dos{
+    position:absolute;
+    background-color: #4d82bc;
+    top: 45%;
+    left: 1%;
+       
+}
+.art_right_dos{
+    position:absolute;
+    background-color: #4d82bc;
+    top: 45%;
+    right: 1%;
+    
+}
+.art_center_dos{
+    position:relative;
+    background-color: #4d82bc;
+    top: 45%;
+    left:40%;
+    
+}
+
+img{
+    opacity: 1;
+    width: 320px;
+    height: 400px;
+    margin: auto;
+    border: 4px solid #3b3b3b;
+}
+
+img:hover{
+    border: 4px solid rgb(255, 255, 255);
+    transition: 0.8s;
+}
+
+#habitos{
+    position:absolute;
+    top: 50px;
+    left: 20px;
+    
+}
+#caballero{
+    position:absolute;
+    top: 50px;
+    right: 400px;
+    
+}
+#inteligencia{
+    position:absolute;
+    top: 620px;
+    left: 120px;
+    
+}
+
+.imagen_left{
+    position:absolute;
+    width: 450px;
+    height: 350px;
+    top: 5%;
+    left:1%;
+
+}
+.imagen_center{
+    position:absolute;
+    width: 450px;
+    height: 350px;
+    top: 5%;
+    left:35%;
+    
+}
+.imagen_right{
+
+    position:absolute;
+    width: 450px;
+    height: 350px;
+    top: 5%;
+    right: 1%;
+    
+}
+
+.rating{
+    position:relative;
+    display:flex;
+    flex-direction: row-reverse;
+    padding: 20px 20px;
+    border:3px solid rgb(200,200,200);
+    gap: 4px;
+    border-radius:30px;
+    background: rgb(239,239,239);
+}
+
+
+.rating input{
+    position:relative;
+    width: 40px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+
+.rating input::before{
+    content:'\f005';
+    position: relative;
+    font-family: fontAwesome;
+    font-size:34px;
+    color: #111;
+    transition: .5s;
+}
+
+.rating input:hover ~ input::before,
+.rating input:hover::before,
+.rating input:checked ~ input::before,
+.rating input:checked::before{
+    color:#f74780;
+}
+
+.lugares_visitados .art_left_dos{
+    width: 500px;
+    height: 200px;
+    top: 30%;
+    left:1%;
+    z-index:2;
+    background: none;
+}
+
+.lugares_visitados .imagen_left{
+    top: 5%;
+    left: 1%;
+    z-index:1;
+    width: 600px;
+    height: 500px;
+    opacity: 0.9;
+}
+
+.lugares_visitados .art_center_dos{
+    background-color: #48f048;
+    left:45%;
+
+}
+.lugares_visitados .imagen_center{
+    width: 300px;
+    height: 250px;
+    left:45%;
+}
+
+.lugares_visitados .art_right_dos{
+    background-color: #48f048;
+    top: 5%;
+    right: 1%;
+}
+
+.lugares_visitados .imagen_right{
+    top: 55%;
+    right: 1%;
+}
+.busqueda_animales .art_left_dos{
+    background-color: #f5da2f;
+    top:50%;
+}
+.busqueda_animales .art_center_dos{
+    background-color: #f5da2f;
+    top:5%;
+    left:38%;
+    height: 200px;
+}
+.busqueda_animales .imagen_center{
+    top:50%;
+    left:35%;
+}
+.busqueda_animales .art_right_dos{
+    background-color: #f5da2f;
+    top:50%;
+}
+
+
+
